@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DifficulteActivity">
+
+    <ImageButton
+        android:id="@+id/easyButton"
+        android:layout_width="106dp"
+        android:layout_height="98dp"
+        android:layout_marginBottom="32dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/normalButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/chatfacile" />
+
+    <ImageButton
+        android:id="@+id/normalButton"
+        android:layout_width="107dp"
+        android:layout_height="99dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lionmoyen" />
+
+    <ImageButton
+        android:id="@+id/hardButton"
+        android:layout_width="111dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/normalButton"
+        app:srcCompat="@drawable/liondifficile" />
+
+    <TextView
+        android:id="@+id/replayText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:text="Facile (4 lettres)"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/easyButton"
+        app:layout_constraintStart_toEndOf="@+id/easyButton"
+        app:layout_constraintTop_toTopOf="@+id/easyButton"
+        app:layout_constraintVertical_bias="0.493" />
+
+    <TextView
+        android:id="@+id/zooText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:text="Moyen (5 lettres)"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/normalButton"
+        app:layout_constraintStart_toEndOf="@+id/normalButton"
+        app:layout_constraintTop_toTopOf="@+id/normalButton"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:text="Difficile (6 lettres)"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/hardButton"
+        app:layout_constraintStart_toEndOf="@+id/hardButton"
+        app:layout_constraintTop_toTopOf="@+id/hardButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
